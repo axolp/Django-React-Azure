@@ -37,6 +37,7 @@ jobs:
       - name: Collect static files
         run: |
          cd backend
+         cd apex
          python manage.py collectstatic --noinput
          
         
