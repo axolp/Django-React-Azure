@@ -3,9 +3,9 @@ from .settings import *
 from .settings import BASE_DIR
 
 #adresy do backendu 
-ALLOWED_HOSTS= [os.environ['WEBSITE_HOSTNAME']]
+ALLOWED_HOSTS= ['chn-backend.azurewebsites.net']
 
-CSRF_TRUSTED_ORIGINS= ['https://' + os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS= ['https://chn-backend.azurewebsites.net']
 
 DEBUG= False
 
