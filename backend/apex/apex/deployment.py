@@ -9,6 +9,10 @@ CSRF_TRUSTED_ORIGINS= ['https://' + os.environ['WEBSITE_HOSTNAME']]
 
 DEBUG= False
 
+
+
+
+
 #POZNIEJ USTAWIE NA AZURE ZMIENNA Z TYM SECRET KEY
 SECRET_KEY= os.environ['MY_SECRET_KEY']
 
@@ -57,4 +61,5 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT= BASE_DIR/'staticfiles'
+#STATIC_ROOT= BASE_DIR/'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
